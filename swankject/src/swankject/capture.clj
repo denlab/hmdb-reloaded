@@ -185,13 +185,13 @@ The initial value of the capture must be `(z/xml-zip {:tag :capture})`."
 [cap t clazz method args]
 (append-child cap
               (x/element (method-to-tag clazz method)
-                         {:args args}) ))
+                         {:args (str args)})))
 
 (defn aft
   "Same as `bef`, but for the `after` AOP interception."
   [cap t clazz method ret]
   (-> cap
-      (z/edit assoc-in [:attrs :ret] ret)
+      (z/edit assoc-in [:attrs :ret] (str ret))
       z/up))
 
 (defn thr

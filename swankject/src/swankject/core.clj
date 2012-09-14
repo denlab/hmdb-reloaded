@@ -29,16 +29,18 @@
    [clojure.data.xml     :as x   ]
    [clojure.java.shell   :as sh  ]
    [clojure.java.io      :as io  ]
-   [swankject.capture    :as cap ]]
+   [swankject
+    [capture             :as cap]
+    [disk                :as disk]]]
   [:import
    [com.thoughtworks.xstream XStream]
    [java.io PushbackReader]
    [swankject SwankjectAspect Callback CallbackImpl]
    #_[sample Graph]]
   #_[:import
-   [sample    Main]
-   [sample.a  A]
-   [sample.b  B]])
+     [sample    Main]
+     [sample.a  A]
+     [sample.b  B]])
 
 ;;-----------------------------------------------------------------------------
 ;; Checking that we can manipulate the app from the repl
@@ -95,24 +97,6 @@
   "Write the content of capture to disk, in clj format"
   [] (spit "/home/denis/t.clj"
            (with-out-str (pprint (z/root @capture)))))
-
-(defn to-disk!
-  "Persist the given object to disk"
-  [obj] (with-open [w (io/writer "/home/denis/p.clj")]
-          (binding [*out*       w
-                    *print-dup* true]
-            (pprint obj))))
-
-(defn from-disk!
-  "Read an object from the disk"
-  [filename]
-  (with-open [r (PushbackReader. (io/reader filename))]
-    (read r)))
-
-(defn from-disk!-
-  "Read an object from the disk"
-  []
-  (from-disk!  "/home/denis/p.clj"))
 
 (defn read-clj
   "Read a clj file from disk to memory"
