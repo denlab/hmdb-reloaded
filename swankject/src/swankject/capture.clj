@@ -174,9 +174,32 @@ And move to it"
 ;; public functions
 ;;-----------------------------------------------------------------------------
 
+(defn indent-str
+  [depth msg] (s/join (concat (repeat (* 4 depth) \space)
+                              [msg])))
+
+(defn prn-before
+  [depth msg] (println (indent-str depth msg)))
+
+(defn nano-str
+  [n] (s/join ", "
+              (map (fn [[k v]] (str (quot n k) " " (name v)))
+                   {1 :nano, 1000000, :millis 1000000000 :sec})))
+
+(defn prn-after
+  [depth msg nano] (println (indent-str depth (str msg " (" (nano-str nano) ")"))))
+
 (defn ini
   "Return the initial state of a capture"
-  [] (z/xml-zip (x/element :capture)))
+  [] (z/xml-zip (x/element :capture
+                           {:depth 0
+                            :nanotime (System/nanoTime)})))
+
+(defn do-prn-before
+  [cap] (let [n (z/node cap)]
+          (prn-before
+           (get-in n [:attrs :depth])
+           (name (:tag   n )))))
 
 (defn bef
   "Takes a datastructure and the params of a `before` AOP interception,
@@ -184,15 +207,26 @@ and return a new datastructure representing the new capture state.
 The initial value of the capture must be `(z/xml-zip {:tag :capture})`."
 [cap t clazz method args]
 (append-child cap
-              (x/element (method-to-tag clazz method)
-                         {:args (str args)})))
+              (do #_(do-prn-before cap)
+                  (x/element (method-to-tag clazz method)
+                             {:args     (str args)
+                              :depth    (inc (get-in (z/node cap) [:attrs :depth]))
+                              :nanotime (System/nanoTime)}))))
+
+(defn do-prn-after
+  [cap] (let [n (z/node cap)]
+          (prn-after
+           (get-in n [:attrs :depth])
+           (name (:tag   n ))
+           (- (System/nanoTime) (get-in n [:attrs :nanotime])))))
 
 (defn aft
   "Same as `bef`, but for the `after` AOP interception."
   [cap t clazz method ret]
-  (-> cap
-      (z/edit assoc-in [:attrs :ret] (str ret))
-      z/up))
+  (do (do-prn-after cap)
+      (-> cap
+          (z/edit assoc-in [:attrs :ret] (str ret))
+          z/up)))
 
 (defn thr
   "Same as `aft`, but for the `afterThrowing` aspectJ pointcut."

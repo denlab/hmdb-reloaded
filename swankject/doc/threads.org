@@ -1,0 +1,717 @@
+|   id | name                                                          | priority | state         |
+|------+---------------------------------------------------------------+----------+---------------|
+|   54 | org.apache.hadoop.hdfs.server.namenode.PendingReplicationB... |        5 | TIMED_WAITING |
+|   55 | org.apache.hadoop.hdfs.server.namenode.FSNamesystem$Heartb... |        5 | TIMED_WAITING |
+|   56 | org.apache.hadoop.hdfs.server.namenode.LeaseManager$Monito... |        5 | TIMED_WAITING |
+|   57 | org.apache.hadoop.hdfs.server.namenode.FSNamesystem$Replic... |        5 | TIMED_WAITING |
+|   58 | org.apache.hadoop.hdfs.server.namenode.FSNamesystem$NameNo... |        5 | TIMED_WAITING |
+|   59 | org.apache.hadoop.hdfs.server.namenode.DecommissionManager... |        5 | TIMED_WAITING |
+|   61 | Socket Reader #1 for port 8020                                |        5 | RUNNABLE      |
+|   64 | 27616995@qtp-27347750-0                                       |        5 | TIMED_WAITING |
+|   65 | 14911994@qtp-27347750-1 - Acceptor0 SelectChannelConnector... |        5 | RUNNABLE      |
+|   66 | Timer-0                                                       |        5 | TIMED_WAITING |
+|   62 | IPC Server Responder                                          |        5 | RUNNABLE      |
+|   60 | IPC Server listener on 8020                                   |        5 | RUNNABLE      |
+|   67 | IPC Server handler 0 on 8020                                  |        5 | WAITING       |
+|   68 | IPC Server handler 1 on 8020                                  |        5 | WAITING       |
+|   69 | IPC Server handler 2 on 8020                                  |        5 | WAITING       |
+|   70 | IPC Server handler 3 on 8020                                  |        5 | WAITING       |
+|   71 | IPC Server handler 4 on 8020                                  |        5 | WAITING       |
+|   72 | IPC Server handler 5 on 8020                                  |        5 | WAITING       |
+|   73 | IPC Server handler 6 on 8020                                  |        5 | WAITING       |
+|   74 | IPC Server handler 7 on 8020                                  |        5 | WAITING       |
+|   75 | IPC Server handler 8 on 8020                                  |        5 | WAITING       |
+|   76 | IPC Server handler 9 on 8020                                  |        5 | WAITING       |
+|   77 | IPC Client (47) connection to localhost/127.0.0.1:8020 fro... |        5 | TIMED_WAITING |
+|   78 | sendParams-0                                                  |        5 | TIMED_WAITING |
+|   80 | pool-2-thread-1                                               |        5 | WAITING       |
+|   93 | IPC Client (47) connection to localhost/127.0.0.1:8020 fro... |        5 | TIMED_WAITING |
+|   96 | refreshUsed-/tmp/lily-proxy-6d65ebb3-4e51-4faf-b872-6c80ac... |        5 | TIMED_WAITING |
+|   99 | refreshUsed-/tmp/lily-proxy-6d65ebb3-4e51-4faf-b872-6c80ac... |        5 | TIMED_WAITING |
+|  100 | Async Block Report Generator                                  |        5 | TIMED_WAITING |
+|  102 | 6786246@qtp-3554494-0                                         |        5 | TIMED_WAITING |
+|  103 | 22879942@qtp-3554494-1 - Acceptor0 SelectChannelConnector@... |        5 | RUNNABLE      |
+|  104 | Timer-1                                                       |        5 | TIMED_WAITING |
+|  106 | Socket Reader #1 for port 44844                               |        5 | RUNNABLE      |
+|  108 | pool-5-thread-1                                               |        5 | WAITING       |
+|  109 | DataNode: [/tmp/lily-proxy-6d65ebb3-4e51-4faf-b872-6c80ac1... |        5 | TIMED_WAITING |
+|  107 | IPC Server Responder                                          |        5 | RUNNABLE      |
+|  105 | IPC Server listener on 44844                                  |        5 | RUNNABLE      |
+|  110 | IPC Server handler 0 on 44844                                 |        5 | WAITING       |
+|  111 | IPC Server handler 1 on 44844                                 |        5 | WAITING       |
+|  112 | IPC Server handler 2 on 44844                                 |        5 | WAITING       |
+|  113 | IPC Server handler 3 on 44844                                 |        5 | WAITING       |
+|  114 | IPC Server handler 4 on 44844                                 |        5 | WAITING       |
+|  116 | IPC Server handler 5 on 44844                                 |        5 | WAITING       |
+|  115 | Block Scanner Thread #0                                       |        5 | WAITING       |
+|  117 | Block Scanner Thread #1                                       |        5 | WAITING       |
+|  118 | org.apache.hadoop.hdfs.server.datanode.DataBlockScanner@80... |        5 | TIMED_WAITING |
+|  121 | NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181                     |        5 | RUNNABLE      |
+|  122 | SessionTracker                                                |        5 | TIMED_WAITING |
+|  123 | SyncThread:0                                                  |        5 | WAITING       |
+|  124 | ProcessThread:-1                                              |        5 | WAITING       |
+|  127 | LeaseChecker                                                  |        5 | TIMED_WAITING |
+|  131 | sendParams-1                                                  |        5 | TIMED_WAITING |
+|  134 | IPC Reader 0 on port 47147                                    |        5 | RUNNABLE      |
+|  135 | IPC Reader 1 on port 47147                                    |        5 | RUNNABLE      |
+|  136 | IPC Reader 2 on port 47147                                    |        5 | RUNNABLE      |
+|  137 | IPC Reader 3 on port 47147                                    |        5 | RUNNABLE      |
+|  138 | IPC Reader 4 on port 47147                                    |        5 | RUNNABLE      |
+|  139 | IPC Reader 5 on port 47147                                    |        5 | RUNNABLE      |
+|  140 | IPC Reader 6 on port 47147                                    |        5 | RUNNABLE      |
+|  141 | IPC Reader 7 on port 47147                                    |        5 | RUNNABLE      |
+|  142 | IPC Reader 8 on port 47147                                    |        5 | RUNNABLE      |
+|  143 | IPC Reader 9 on port 47147                                    |        5 | RUNNABLE      |
+|  144 | IPC Server Responder                                          |        5 | RUNNABLE      |
+|  133 | IPC Server listener on 47147                                  |        5 | RUNNABLE      |
+|  145 | IPC Server handler 0 on 47147                                 |        5 | WAITING       |
+|  146 | IPC Server handler 1 on 47147                                 |        5 | WAITING       |
+|  147 | IPC Server handler 2 on 47147                                 |        5 | WAITING       |
+|  148 | IPC Server handler 3 on 47147                                 |        5 | WAITING       |
+|  149 | IPC Server handler 4 on 47147                                 |        5 | WAITING       |
+|  150 | IPC Server handler 5 on 47147                                 |        5 | WAITING       |
+|  151 | IPC Server handler 6 on 47147                                 |        5 | WAITING       |
+|  152 | IPC Server handler 7 on 47147                                 |        5 | WAITING       |
+|  153 | IPC Server handler 8 on 47147                                 |        5 | WAITING       |
+|  154 | IPC Server handler 9 on 47147                                 |        5 | WAITING       |
+|  155 | IPC Server handler 10 on 47147                                |        5 | WAITING       |
+|  156 | IPC Server handler 11 on 47147                                |        5 | WAITING       |
+|  157 | IPC Server handler 12 on 47147                                |        5 | WAITING       |
+|  158 | IPC Server handler 13 on 47147                                |        5 | WAITING       |
+|  159 | IPC Server handler 14 on 47147                                |        5 | WAITING       |
+|  160 | IPC Server handler 15 on 47147                                |        5 | WAITING       |
+|  161 | IPC Server handler 16 on 47147                                |        5 | WAITING       |
+|  162 | IPC Server handler 17 on 47147                                |        5 | WAITING       |
+|  163 | IPC Server handler 18 on 47147                                |        5 | WAITING       |
+|  164 | IPC Server handler 19 on 47147                                |        5 | WAITING       |
+|  165 | IPC Server handler 20 on 47147                                |        5 | WAITING       |
+|  166 | IPC Server handler 21 on 47147                                |        5 | WAITING       |
+|  167 | IPC Server handler 22 on 47147                                |        5 | WAITING       |
+|  168 | IPC Server handler 23 on 47147                                |        5 | WAITING       |
+|  169 | IPC Server handler 24 on 47147                                |        5 | WAITING       |
+|  170 | IPC Server handler 25 on 47147                                |        5 | WAITING       |
+|  171 | IPC Server handler 26 on 47147                                |        5 | WAITING       |
+|  172 | IPC Server handler 27 on 47147                                |        5 | WAITING       |
+|  173 | IPC Server handler 28 on 47147                                |        5 | WAITING       |
+|  174 | IPC Server handler 29 on 47147                                |        5 | WAITING       |
+|  175 | main-SendThread(localhost:2181)                               |        5 | RUNNABLE      |
+|  176 | main-EventThread                                              |        5 | WAITING       |
+|  179 | IPC Reader 0 on port 48552                                    |        5 | RUNNABLE      |
+|  180 | IPC Reader 1 on port 48552                                    |        5 | RUNNABLE      |
+|  181 | IPC Reader 2 on port 48552                                    |        5 | RUNNABLE      |
+|  182 | IPC Reader 3 on port 48552                                    |        5 | RUNNABLE      |
+|  183 | IPC Reader 4 on port 48552                                    |        5 | RUNNABLE      |
+|  184 | IPC Reader 5 on port 48552                                    |        5 | RUNNABLE      |
+|  185 | IPC Reader 6 on port 48552                                    |        5 | RUNNABLE      |
+|  186 | IPC Reader 7 on port 48552                                    |        5 | RUNNABLE      |
+|  187 | IPC Reader 8 on port 48552                                    |        5 | RUNNABLE      |
+|  188 | IPC Reader 9 on port 48552                                    |        5 | RUNNABLE      |
+|  177 | Master:0;localhost:47147                                      |        5 | TIMED_WAITING |
+|  190 | RegionServer:0;localhost,48552,1347724785581                  |        5 | TIMED_WAITING |
+|  192 | RegionServer:0;localhost,48552,1347724785581-SendThread(lo... |        5 | RUNNABLE      |
+|  193 | RegionServer:0;localhost,48552,1347724785581-EventThread      |        5 | WAITING       |
+|  217 | main-SendThread(localhost:2181)                               |        5 | RUNNABLE      |
+|  218 | main-EventThread                                              |        5 | WAITING       |
+|  219 | Master:0;localhost:47147-SendThread(localhost:2181)           |        5 | RUNNABLE      |
+|  220 | Master:0;localhost:47147-EventThread                          |        5 | WAITING       |
+|  221 | localhost:47147.timeoutMonitor                                |        5 | TIMED_WAITING |
+|  222 | RegionServer:0;localhost,48552,1347724785581-SendThread(lo... |        5 | RUNNABLE      |
+|  223 | RegionServer:0;localhost,48552,1347724785581-EventThread      |        5 | WAITING       |
+|  224 | Master:0;localhost:47147.oldLogCleaner                        |        5 | TIMED_WAITING |
+|  229 | 9068611@qtp-23539722-0                                        |        5 | TIMED_WAITING |
+|  230 | 29103674@qtp-23539722-1 - Acceptor0 SelectChannelConnector... |        5 | RUNNABLE      |
+|  231 | IPC Client (47) connection to localhost/127.0.0.1:47147 fr... |        5 | TIMED_WAITING |
+|  232 | Timer-2                                                       |        5 | TIMED_WAITING |
+|  235 | DataStreamer for file /user/wenis/.logs/localhost,48552,13... |        5 | TIMED_WAITING |
+|  236 | LeaseChecker                                                  |        5 | TIMED_WAITING |
+|  237 | RegionServer:0;localhost,48552,1347724785581.logSyncer        |        5 | TIMED_WAITING |
+|  234 | RegionServer:0;localhost,48552,1347724785581.logRoller        |        5 | TIMED_WAITING |
+|  225 | RegionServer:0;localhost,48552,1347724785581.cacheFlusher     |        5 | TIMED_WAITING |
+|  226 | RegionServer:0;localhost,48552,1347724785581.compactor        |        5 | TIMED_WAITING |
+|  227 | RegionServer:0;localhost,48552,1347724785581.majorCompacti... |        5 | TIMED_WAITING |
+|  228 | RegionServer:0;localhost,48552,1347724785581.leaseChecker     |        5 | TIMED_WAITING |
+|  238 | 4471689@qtp-1970922-0                                         |        5 | TIMED_WAITING |
+|  239 | 15304914@qtp-1970922-1 - Acceptor0 SelectChannelConnector@... |        5 | RUNNABLE      |
+|  240 | Timer-3                                                       |        5 | TIMED_WAITING |
+|  189 | IPC Server Responder                                          |        5 | RUNNABLE      |
+|  178 | IPC Server listener on 48552                                  |        5 | RUNNABLE      |
+|  241 | IPC Server handler 0 on 48552                                 |        5 | WAITING       |
+|  242 | IPC Server handler 1 on 48552                                 |        5 | WAITING       |
+|  243 | IPC Server handler 2 on 48552                                 |        5 | WAITING       |
+|  244 | IPC Server handler 3 on 48552                                 |        5 | WAITING       |
+|  245 | IPC Server handler 4 on 48552                                 |        5 | WAITING       |
+|  246 | IPC Server handler 5 on 48552                                 |        5 | WAITING       |
+|  247 | IPC Server handler 6 on 48552                                 |        5 | WAITING       |
+|  248 | IPC Server handler 7 on 48552                                 |        5 | WAITING       |
+|  249 | IPC Server handler 8 on 48552                                 |        5 | WAITING       |
+|  250 | IPC Server handler 9 on 48552                                 |        5 | WAITING       |
+|  251 | IPC Server handler 10 on 48552                                |        5 | WAITING       |
+|  252 | IPC Server handler 11 on 48552                                |        5 | WAITING       |
+|  253 | IPC Server handler 12 on 48552                                |        5 | WAITING       |
+|  254 | IPC Server handler 13 on 48552                                |        5 | WAITING       |
+|  255 | IPC Server handler 14 on 48552                                |        5 | WAITING       |
+|  256 | IPC Server handler 15 on 48552                                |        5 | WAITING       |
+|  257 | IPC Server handler 16 on 48552                                |        5 | WAITING       |
+|  258 | IPC Server handler 17 on 48552                                |        5 | WAITING       |
+|  259 | IPC Server handler 18 on 48552                                |        5 | WAITING       |
+|  260 | IPC Server handler 19 on 48552                                |        5 | WAITING       |
+|  261 | IPC Server handler 20 on 48552                                |        5 | WAITING       |
+|  262 | IPC Server handler 21 on 48552                                |        5 | WAITING       |
+|  263 | IPC Server handler 22 on 48552                                |        5 | WAITING       |
+|  264 | IPC Server handler 23 on 48552                                |        5 | WAITING       |
+|  265 | IPC Server handler 24 on 48552                                |        5 | WAITING       |
+|  266 | IPC Server handler 25 on 48552                                |        5 | WAITING       |
+|  267 | IPC Server handler 26 on 48552                                |        5 | WAITING       |
+|  268 | IPC Server handler 27 on 48552                                |        5 | WAITING       |
+|  269 | IPC Server handler 28 on 48552                                |        5 | WAITING       |
+|  270 | IPC Server handler 29 on 48552                                |        5 | WAITING       |
+|  271 | PRI IPC Server handler 0 on 48552                             |        5 | WAITING       |
+|  272 | PRI IPC Server handler 1 on 48552                             |        5 | WAITING       |
+|  273 | PRI IPC Server handler 2 on 48552                             |        5 | WAITING       |
+|  274 | PRI IPC Server handler 3 on 48552                             |        5 | WAITING       |
+|  275 | PRI IPC Server handler 4 on 48552                             |        5 | WAITING       |
+|  276 | PRI IPC Server handler 5 on 48552                             |        5 | TIMED_WAITING |
+|  277 | PRI IPC Server handler 6 on 48552                             |        5 | WAITING       |
+|  278 | PRI IPC Server handler 7 on 48552                             |        5 | WAITING       |
+|  279 | PRI IPC Server handler 8 on 48552                             |        5 | WAITING       |
+|  280 | PRI IPC Server handler 9 on 48552                             |        5 | WAITING       |
+|  281 | SplitLogWorker-localhost,48552,1347724785581                  |        5 | WAITING       |
+|  283 | LruBlockCache.EvictionThread                                  |        5 | WAITING       |
+|  285 | LRU Statistics #0                                             |        5 | TIMED_WAITING |
+|  288 | ResponseProcessor for block blk_8722297095659285937_1007      |        5 | RUNNABLE      |
+|  289 | IPC Client (47) connection to /127.0.0.1:48552 from an unk... |        5 | RUNNABLE      |
+|  290 | RS_OPEN_ROOT-localhost,48552,1347724785581-0                  |        5 | WAITING       |
+|  293 | MASTER_OPEN_REGION-localhost:47147-0                          |        5 | WAITING       |
+|  295 | RS_OPEN_META-localhost,48552,1347724785581-0                  |        5 | WAITING       |
+|  297 | MASTER_OPEN_REGION-localhost:47147-1                          |        5 | WAITING       |
+|  298 | localhost:47147-BalancerChore                                 |        5 | TIMED_WAITING |
+|  299 | localhost:47147-CatalogJanitor                                |        5 | TIMED_WAITING |
+|  300 | Thread-202                                                    |        5 | WAITING       |
+|  301 | Timer thread for monitoring                                   |        5 | TIMED_WAITING |
+|  304 | Thread[Thread-204,5,main]                                     |        5 | TIMED_WAITING |
+|  306 | Socket Reader #1 for port 9001                                |        5 | RUNNABLE      |
+|  310 | 8241628@qtp-29595982-0                                        |        5 | TIMED_WAITING |
+|  311 | 30236967@qtp-29595982-1 - Acceptor0 SelectChannelConnector... |        5 | RUNNABLE      |
+|  312 | Timer-4                                                       |        5 | TIMED_WAITING |
+|  315 | pool-33-thread-1                                              |        5 | WAITING       |
+|  316 | Thread-213                                                    |        5 | WAITING       |
+|  321 | jobInitManager                                                |        5 | WAITING       |
+|  322 | expireTrackers                                                |        5 | TIMED_WAITING |
+|  323 | retireJobs                                                    |        5 | TIMED_WAITING |
+|  302 | expireLaunchingTasks                                          |        5 | TIMED_WAITING |
+|  307 | IPC Server Responder                                          |        5 | RUNNABLE      |
+|  305 | IPC Server listener on 9001                                   |        5 | RUNNABLE      |
+|  324 | IPC Server handler 0 on 9001                                  |        5 | WAITING       |
+|  325 | IPC Server handler 1 on 9001                                  |        5 | WAITING       |
+|  326 | IPC Server handler 2 on 9001                                  |        5 | WAITING       |
+|  327 | IPC Server handler 3 on 9001                                  |        5 | WAITING       |
+|  328 | IPC Server handler 4 on 9001                                  |        5 | WAITING       |
+|  329 | IPC Server handler 5 on 9001                                  |        5 | WAITING       |
+|  330 | IPC Server handler 6 on 9001                                  |        5 | WAITING       |
+|  331 | IPC Server handler 7 on 9001                                  |        5 | WAITING       |
+|  332 | IPC Server handler 8 on 9001                                  |        5 | WAITING       |
+|  333 | IPC Server handler 9 on 9001                                  |        5 | WAITING       |
+|  341 | Directory/File cleanup thread                                 |        5 | WAITING       |
+|  351 | Socket Reader #1 for port 49887                               |        5 | RUNNABLE      |
+|  352 | IPC Server Responder                                          |        5 | RUNNABLE      |
+|  350 | IPC Server listener on 49887                                  |        5 | RUNNABLE      |
+|  353 | IPC Server handler 0 on 49887                                 |        5 | WAITING       |
+|  354 | IPC Server handler 1 on 49887                                 |        5 | WAITING       |
+|  355 | IPC Server handler 2 on 49887                                 |        5 | WAITING       |
+|  356 | IPC Server handler 3 on 49887                                 |        5 | WAITING       |
+|  357 | IPC Client (47) connection to localhost/127.0.0.1:9001 fro... |        5 | TIMED_WAITING |
+|  358 | Map-events fetcher for all reduce tasks on tracker_localho... |        5 | WAITING       |
+|  365 | TaskLauncher for MAP tasks                                    |        5 | WAITING       |
+|  366 | TaskLauncher for REDUCE tasks                                 |        5 | WAITING       |
+|  367 | Monitor for Jetty bugs                                        |        5 | TIMED_WAITING |
+|  368 | 2026550@qtp-29109081-0 - Acceptor0 SelectChannelConnector@... |        5 | RUNNABLE      |
+|  369 | Timer-5                                                       |        5 | TIMED_WAITING |
+|  370 | Thread-252                                                    |        5 | TIMED_WAITING |
+|  340 | Thread-230                                                    |        5 | TIMED_WAITING |
+|  339 | Thread-229                                                    |        5 | WAITING       |
+|  334 | taskCleanup                                                   |        5 | WAITING       |
+|  372 | 28311246@qtp-8881919-0                                        |        5 | TIMED_WAITING |
+|  373 | 29896220@qtp-8881919-1 - Acceptor0 SocketConnector@0.0.0.0... |        5 | RUNNABLE      |
+|  374 | Timer-6                                                       |        5 | TIMED_WAITING |
+|  375 | pool-34-thread-1                                              |        5 | WAITING       |
+|  380 | Timer thread for monitoring rowLocker                         |        5 | TIMED_WAITING |
+|  392 | RS_OPEN_REGION-localhost,48552,1347724785581-0                |        5 | WAITING       |
+|  393 | IPC Client (47) connection to localhost/127.0.0.1:8020 fro... |        5 | TIMED_WAITING |
+|  395 | MASTER_OPEN_REGION-localhost:47147-2                          |        5 | WAITING       |
+|  407 | RS_OPEN_REGION-localhost,48552,1347724785581-1                |        5 | WAITING       |
+|  409 | MASTER_OPEN_REGION-localhost:47147-3                          |        5 | WAITING       |
+|  419 | RS_OPEN_REGION-localhost,48552,1347724785581-2                |        5 | WAITING       |
+|  421 | MASTER_OPEN_REGION-localhost:47147-4                          |        5 | WAITING       |
+|  438 | hbase-batch-thread-1                                          |        5 | WAITING       |
+|  459 | Timer thread for monitoring blobIncubator                     |        5 | TIMED_WAITING |
+|  462 | Timer thread for monitoring repository                        |        5 | TIMED_WAITING |
+|  463 | Timer thread for monitoring linkIndex                         |        5 | TIMED_WAITING |
+|  484 | Timer thread for monitoring linkIndexUpdater                  |        5 | TIMED_WAITING |
+|  498 | Timer thread for monitoring rowlog                            |        5 | TIMED_WAITING |
+|  499 | Timer thread for monitoring subscriptionHandler               |        5 | TIMED_WAITING |
+|  523 | Timer thread for monitoring solrClient                        |        5 | TIMED_WAITING |
+|  524 | Timer thread for monitoring indexer                           |        5 | TIMED_WAITING |
+|  528 | Timer thread for monitoring indexUpdater                      |        5 | TIMED_WAITING |
+|  562 | 32922587@qtp-8881919-2                                        |        5 | TIMED_WAITING |
+|  563 | 31165231@qtp-8881919-3                                        |        5 | TIMED_WAITING |
+|  564 | 24454777@qtp-8881919-4                                        |        5 | RUNNABLE      |
+|  565 | 28012832@qtp-8881919-5                                        |        5 | TIMED_WAITING |
+|  574 | 30688854@qtp-8881919-6                                        |        5 | TIMED_WAITING |
+|  576 | 30929885@qtp-8881919-8                                        |        5 | TIMED_WAITING |
+|  577 | 3145316@qtp-8881919-9                                         |        5 | TIMED_WAITING |
+|  580 | 20203690@qtp-8881919-10                                       |        5 | TIMED_WAITING |
+|  585 | 15542660@qtp-8881919-11                                       |        5 | RUNNABLE      |
+|  586 | main-SendThread(localhost:2181)                               |        5 | RUNNABLE      |
+|  587 | main-EventThread                                              |        5 | WAITING       |
+|  588 | TypeManager cache refresher                                   |        5 | TIMED_WAITING |
+|  651 | main-SendThread(localhost:2181)                               |        5 | RUNNABLE      |
+|  652 | main-EventThread                                              |        5 | WAITING       |
+|  654 | pool-80-thread-1                                              |        5 | TIMED_WAITING |
+|  655 | pool-83-thread-1                                              |        5 | TIMED_WAITING |
+|  797 | pool-146-thread-1                                             |        5 | TIMED_WAITING |
+|  798 | pool-148-thread-1                                             |        5 | TIMED_WAITING |
+|  910 | main-SendThread(localhost:2181)                               |        5 | RUNNABLE      |
+|  911 | main-EventThread                                              |        5 | WAITING       |
+|  705 | Async disk worker #0 for volume /tmp/lily-proxy-6d65ebb3-4... |        5 | TIMED_WAITING |
+|  706 | Async disk worker #0 for volume /tmp/lily-proxy-6d65ebb3-4... |        5 | TIMED_WAITING |
+|  101 | org.apache.hadoop.hdfs.server.datanode.DataXceiverServer@b... |        5 | RUNNABLE      |
+|  194 | DataXceiver for client /127.0.0.1:45209 [Waiting for opera... |        5 | RUNNABLE      |
+|  286 | DataXceiver for client /127.0.0.1:45220 [receiving block b... |        5 | RUNNABLE      |
+|  287 | PacketResponder 0 for Block blk_8722297095659285937_1007      |        5 | TIMED_WAITING |
+|  291 | DataXceiver for client /127.0.0.1:45222 [Waiting for opera... |        5 | RUNNABLE      |
+|  927 | DataXceiver for client /127.0.0.1:45355 [Waiting for opera... |        5 | RUNNABLE      |
+|  550 | rowlog-client-mq-boss-thread-1                                |        5 | TIMED_WAITING |
+|  551 | rowlog-client-mq-worker-thread-1                              |        5 | TIMED_WAITING |
+|  552 | rowlog-client-mq-worker-thread-2                              |        5 | TIMED_WAITING |
+|  553 | rowlog-client-mq-worker-thread-3                              |        5 | TIMED_WAITING |
+|  554 | rowlog-client-mq-worker-thread-4                              |        5 | TIMED_WAITING |
+|  555 | rowlog-client-mq-worker-thread-5                              |        5 | TIMED_WAITING |
+|  567 | rowlog-client-mq-worker-thread-6                              |        5 | TIMED_WAITING |
+|  570 | rowlog-client-mq-worker-thread-7                              |        5 | TIMED_WAITING |
+|  572 | rowlog-client-mq-worker-thread-8                              |        5 | TIMED_WAITING |
+|  573 | rowlog-client-mq-worker-thread-9                              |        5 | TIMED_WAITING |
+|  579 | rowlog-client-mq-worker-thread-10                             |        5 | TIMED_WAITING |
+|  561 | MultiThreadedHttpConnectionManager cleanup                    |        5 | WAITING       |
+|  747 | rowlog-client-mq-boss-thread-1                                |        5 | TIMED_WAITING |
+|  749 | rowlog-client-mq-worker-thread-1                              |        5 | TIMED_WAITING |
+|  752 | rowlog-client-mq-worker-thread-2                              |        5 | TIMED_WAITING |
+|  753 | rowlog-client-mq-worker-thread-3                              |        5 | TIMED_WAITING |
+|  754 | rowlog-client-mq-worker-thread-4                              |        5 | TIMED_WAITING |
+|  756 | rowlog-client-mq-worker-thread-5                              |        5 | TIMED_WAITING |
+|  758 | rowlog-client-mq-worker-thread-6                              |        5 | TIMED_WAITING |
+|  759 | rowlog-client-mq-worker-thread-7                              |        5 | TIMED_WAITING |
+|  762 | rowlog-client-mq-worker-thread-8                              |        5 | TIMED_WAITING |
+|  765 | rowlog-client-mq-worker-thread-9                              |        5 | TIMED_WAITING |
+|  766 | rowlog-client-mq-worker-thread-10                             |        5 | TIMED_WAITING |
+|  889 | rowlog-client-mq-boss-thread-1                                |        5 | TIMED_WAITING |
+|  891 | rowlog-client-mq-worker-thread-1                              |        5 | TIMED_WAITING |
+|  892 | rowlog-client-mq-worker-thread-2                              |        5 | TIMED_WAITING |
+|  894 | rowlog-client-mq-worker-thread-3                              |        5 | TIMED_WAITING |
+|  896 | rowlog-client-mq-worker-thread-4                              |        5 | TIMED_WAITING |
+|  898 | rowlog-client-mq-worker-thread-5                              |        5 | TIMED_WAITING |
+|  900 | rowlog-client-mq-worker-thread-6                              |        5 | TIMED_WAITING |
+|  905 | rowlog-client-mq-worker-thread-7                              |        5 | TIMED_WAITING |
+|  906 | rowlog-client-mq-worker-thread-8                              |        5 | TIMED_WAITING |
+|  907 | rowlog-client-mq-worker-thread-9                              |        5 | TIMED_WAITING |
+|  908 | rowlog-client-mq-worker-thread-10                             |        5 | TIMED_WAITING |
+|   55 | org.apache.hadoop.hdfs.server.namenode.FSNamesystem$Heartb... |        5 | TIMED_WAITING |
+|   56 | org.apache.hadoop.hdfs.server.namenode.LeaseManager$Monito... |        5 | TIMED_WAITING |
+|   57 | org.apache.hadoop.hdfs.server.namenode.FSNamesystem$Replic... |        5 | TIMED_WAITING |
+|   58 | org.apache.hadoop.hdfs.server.namenode.FSNamesystem$NameNo... |        5 | TIMED_WAITING |
+|   59 | org.apache.hadoop.hdfs.server.namenode.DecommissionManager... |        5 | TIMED_WAITING |
+|   61 | Socket Reader #1 for port 8020                                |        5 | RUNNABLE      |
+|   64 | 27616995@qtp-27347750-0                                       |        5 | TIMED_WAITING |
+|   65 | 14911994@qtp-27347750-1 - Acceptor0 SelectChannelConnector... |        5 | RUNNABLE      |
+|   66 | Timer-0                                                       |        5 | TIMED_WAITING |
+|   62 | IPC Server Responder                                          |        5 | RUNNABLE      |
+|   60 | IPC Server listener on 8020                                   |        5 | RUNNABLE      |
+|   67 | IPC Server handler 0 on 8020                                  |        5 | WAITING       |
+|   68 | IPC Server handler 1 on 8020                                  |        5 | WAITING       |
+|   69 | IPC Server handler 2 on 8020                                  |        5 | WAITING       |
+|   70 | IPC Server handler 3 on 8020                                  |        5 | WAITING       |
+|   71 | IPC Server handler 4 on 8020                                  |        5 | WAITING       |
+|   72 | IPC Server handler 5 on 8020                                  |        5 | WAITING       |
+|   73 | IPC Server handler 6 on 8020                                  |        5 | WAITING       |
+|   74 | IPC Server handler 7 on 8020                                  |        5 | WAITING       |
+|   75 | IPC Server handler 8 on 8020                                  |        5 | WAITING       |
+|   76 | IPC Server handler 9 on 8020                                  |        5 | WAITING       |
+|   77 | IPC Client (47) connection to localhost/127.0.0.1:8020 fro... |        5 | TIMED_WAITING |
+|   78 | sendParams-0                                                  |        5 | TIMED_WAITING |
+|   80 | pool-2-thread-1                                               |        5 | WAITING       |
+|   93 | IPC Client (47) connection to localhost/127.0.0.1:8020 fro... |        5 | TIMED_WAITING |
+|   96 | refreshUsed-/tmp/lily-proxy-6d65ebb3-4e51-4faf-b872-6c80ac... |        5 | TIMED_WAITING |
+|   99 | refreshUsed-/tmp/lily-proxy-6d65ebb3-4e51-4faf-b872-6c80ac... |        5 | TIMED_WAITING |
+|  100 | Async Block Report Generator                                  |        5 | TIMED_WAITING |
+|  102 | 6786246@qtp-3554494-0                                         |        5 | TIMED_WAITING |
+|  103 | 22879942@qtp-3554494-1 - Acceptor0 SelectChannelConnector@... |        5 | RUNNABLE      |
+|  104 | Timer-1                                                       |        5 | TIMED_WAITING |
+|  106 | Socket Reader #1 for port 44844                               |        5 | RUNNABLE      |
+|  108 | pool-5-thread-1                                               |        5 | WAITING       |
+|  109 | DataNode: [/tmp/lily-proxy-6d65ebb3-4e51-4faf-b872-6c80ac1... |        5 | TIMED_WAITING |
+|  107 | IPC Server Responder                                          |        5 | RUNNABLE      |
+|  105 | IPC Server listener on 44844                                  |        5 | RUNNABLE      |
+|  110 | IPC Server handler 0 on 44844                                 |        5 | WAITING       |
+|  111 | IPC Server handler 1 on 44844                                 |        5 | WAITING       |
+|  112 | IPC Server handler 2 on 44844                                 |        5 | WAITING       |
+|  113 | IPC Server handler 3 on 44844                                 |        5 | WAITING       |
+|  114 | IPC Server handler 4 on 44844                                 |        5 | WAITING       |
+|  116 | IPC Server handler 5 on 44844                                 |        5 | WAITING       |
+|  115 | Block Scanner Thread #0                                       |        5 | WAITING       |
+|  117 | Block Scanner Thread #1                                       |        5 | WAITING       |
+|  118 | org.apache.hadoop.hdfs.server.datanode.DataBlockScanner@80... |        5 | TIMED_WAITING |
+|  121 | NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181                     |        5 | RUNNABLE      |
+|  122 | SessionTracker                                                |        5 | TIMED_WAITING |
+|  123 | SyncThread:0                                                  |        5 | WAITING       |
+|  124 | ProcessThread:-1                                              |        5 | WAITING       |
+|  127 | LeaseChecker                                                  |        5 | TIMED_WAITING |
+|  131 | sendParams-1                                                  |        5 | TIMED_WAITING |
+|  134 | IPC Reader 0 on port 47147                                    |        5 | RUNNABLE      |
+|  135 | IPC Reader 1 on port 47147                                    |        5 | RUNNABLE      |
+|  136 | IPC Reader 2 on port 47147                                    |        5 | RUNNABLE      |
+|  137 | IPC Reader 3 on port 47147                                    |        5 | RUNNABLE      |
+|  138 | IPC Reader 4 on port 47147                                    |        5 | RUNNABLE      |
+|  139 | IPC Reader 5 on port 47147                                    |        5 | RUNNABLE      |
+|  140 | IPC Reader 6 on port 47147                                    |        5 | RUNNABLE      |
+|  141 | IPC Reader 7 on port 47147                                    |        5 | RUNNABLE      |
+|  142 | IPC Reader 8 on port 47147                                    |        5 | RUNNABLE      |
+|  143 | IPC Reader 9 on port 47147                                    |        5 | RUNNABLE      |
+|  144 | IPC Server Responder                                          |        5 | RUNNABLE      |
+|  133 | IPC Server listener on 47147                                  |        5 | RUNNABLE      |
+|  145 | IPC Server handler 0 on 47147                                 |        5 | WAITING       |
+|  146 | IPC Server handler 1 on 47147                                 |        5 | WAITING       |
+|  147 | IPC Server handler 2 on 47147                                 |        5 | WAITING       |
+|  148 | IPC Server handler 3 on 47147                                 |        5 | WAITING       |
+|  149 | IPC Server handler 4 on 47147                                 |        5 | WAITING       |
+|  150 | IPC Server handler 5 on 47147                                 |        5 | WAITING       |
+|  151 | IPC Server handler 6 on 47147                                 |        5 | WAITING       |
+|  152 | IPC Server handler 7 on 47147                                 |        5 | WAITING       |
+|  153 | IPC Server handler 8 on 47147                                 |        5 | WAITING       |
+|  154 | IPC Server handler 9 on 47147                                 |        5 | WAITING       |
+|  155 | IPC Server handler 10 on 47147                                |        5 | WAITING       |
+|  156 | IPC Server handler 11 on 47147                                |        5 | WAITING       |
+|  157 | IPC Server handler 12 on 47147                                |        5 | WAITING       |
+|  158 | IPC Server handler 13 on 47147                                |        5 | WAITING       |
+|  159 | IPC Server handler 14 on 47147                                |        5 | WAITING       |
+|  160 | IPC Server handler 15 on 47147                                |        5 | WAITING       |
+|  161 | IPC Server handler 16 on 47147                                |        5 | WAITING       |
+|  162 | IPC Server handler 17 on 47147                                |        5 | WAITING       |
+|  163 | IPC Server handler 18 on 47147                                |        5 | WAITING       |
+|  164 | IPC Server handler 19 on 47147                                |        5 | WAITING       |
+|  165 | IPC Server handler 20 on 47147                                |        5 | WAITING       |
+|  166 | IPC Server handler 21 on 47147                                |        5 | WAITING       |
+|  167 | IPC Server handler 22 on 47147                                |        5 | WAITING       |
+|  168 | IPC Server handler 23 on 47147                                |        5 | WAITING       |
+|  169 | IPC Server handler 24 on 47147                                |        5 | WAITING       |
+|  170 | IPC Server handler 25 on 47147                                |        5 | WAITING       |
+|  171 | IPC Server handler 26 on 47147                                |        5 | WAITING       |
+|  172 | IPC Server handler 27 on 47147                                |        5 | WAITING       |
+|  173 | IPC Server handler 28 on 47147                                |        5 | WAITING       |
+|  174 | IPC Server handler 29 on 47147                                |        5 | WAITING       |
+|  175 | main-SendThread(localhost:2181)                               |        5 | RUNNABLE      |
+|  176 | main-EventThread                                              |        5 | WAITING       |
+|  179 | IPC Reader 0 on port 48552                                    |        5 | RUNNABLE      |
+|  180 | IPC Reader 1 on port 48552                                    |        5 | RUNNABLE      |
+|  181 | IPC Reader 2 on port 48552                                    |        5 | RUNNABLE      |
+|  182 | IPC Reader 3 on port 48552                                    |        5 | RUNNABLE      |
+|  183 | IPC Reader 4 on port 48552                                    |        5 | RUNNABLE      |
+|  184 | IPC Reader 5 on port 48552                                    |        5 | RUNNABLE      |
+|  185 | IPC Reader 6 on port 48552                                    |        5 | RUNNABLE      |
+|  186 | IPC Reader 7 on port 48552                                    |        5 | RUNNABLE      |
+|  187 | IPC Reader 8 on port 48552                                    |        5 | RUNNABLE      |
+|  188 | IPC Reader 9 on port 48552                                    |        5 | RUNNABLE      |
+|  177 | Master:0;localhost:47147                                      |        5 | TIMED_WAITING |
+|  190 | RegionServer:0;localhost,48552,1347724785581                  |        5 | TIMED_WAITING |
+|  192 | RegionServer:0;localhost,48552,1347724785581-SendThread(lo... |        5 | RUNNABLE      |
+|  193 | RegionServer:0;localhost,48552,1347724785581-EventThread      |        5 | WAITING       |
+|  217 | main-SendThread(localhost:2181)                               |        5 | RUNNABLE      |
+|  218 | main-EventThread                                              |        5 | WAITING       |
+|  219 | Master:0;localhost:47147-SendThread(localhost:2181)           |        5 | RUNNABLE      |
+|  220 | Master:0;localhost:47147-EventThread                          |        5 | WAITING       |
+|  221 | localhost:47147.timeoutMonitor                                |        5 | TIMED_WAITING |
+|  222 | RegionServer:0;localhost,48552,1347724785581-SendThread(lo... |        5 | RUNNABLE      |
+|  223 | RegionServer:0;localhost,48552,1347724785581-EventThread      |        5 | WAITING       |
+|  224 | Master:0;localhost:47147.oldLogCleaner                        |        5 | TIMED_WAITING |
+|  229 | 9068611@qtp-23539722-0                                        |        5 | TIMED_WAITING |
+|  230 | 29103674@qtp-23539722-1 - Acceptor0 SelectChannelConnector... |        5 | RUNNABLE      |
+|  231 | IPC Client (47) connection to localhost/127.0.0.1:47147 fr... |        5 | TIMED_WAITING |
+|  232 | Timer-2                                                       |        5 | TIMED_WAITING |
+|  235 | DataStreamer for file /user/wenis/.logs/localhost,48552,13... |        5 | TIMED_WAITING |
+|  236 | LeaseChecker                                                  |        5 | TIMED_WAITING |
+|  237 | RegionServer:0;localhost,48552,1347724785581.logSyncer        |        5 | TIMED_WAITING |
+|  234 | RegionServer:0;localhost,48552,1347724785581.logRoller        |        5 | TIMED_WAITING |
+|  225 | RegionServer:0;localhost,48552,1347724785581.cacheFlusher     |        5 | TIMED_WAITING |
+|  226 | RegionServer:0;localhost,48552,1347724785581.compactor        |        5 | TIMED_WAITING |
+|  227 | RegionServer:0;localhost,48552,1347724785581.majorCompacti... |        5 | TIMED_WAITING |
+|  228 | RegionServer:0;localhost,48552,1347724785581.leaseChecker     |        5 | TIMED_WAITING |
+|  238 | 4471689@qtp-1970922-0                                         |        5 | TIMED_WAITING |
+|  239 | 15304914@qtp-1970922-1 - Acceptor0 SelectChannelConnector@... |        5 | RUNNABLE      |
+|  240 | Timer-3                                                       |        5 | TIMED_WAITING |
+|  189 | IPC Server Responder                                          |        5 | RUNNABLE      |
+|  178 | IPC Server listener on 48552                                  |        5 | RUNNABLE      |
+|  241 | IPC Server handler 0 on 48552                                 |        5 | WAITING       |
+|  242 | IPC Server handler 1 on 48552                                 |        5 | WAITING       |
+|  243 | IPC Server handler 2 on 48552                                 |        5 | WAITING       |
+|  244 | IPC Server handler 3 on 48552                                 |        5 | WAITING       |
+|  245 | IPC Server handler 4 on 48552                                 |        5 | WAITING       |
+|  246 | IPC Server handler 5 on 48552                                 |        5 | WAITING       |
+|  247 | IPC Server handler 6 on 48552                                 |        5 | WAITING       |
+|  248 | IPC Server handler 7 on 48552                                 |        5 | WAITING       |
+|  249 | IPC Server handler 8 on 48552                                 |        5 | WAITING       |
+|  250 | IPC Server handler 9 on 48552                                 |        5 | WAITING       |
+|  251 | IPC Server handler 10 on 48552                                |        5 | WAITING       |
+|  252 | IPC Server handler 11 on 48552                                |        5 | WAITING       |
+|  253 | IPC Server handler 12 on 48552                                |        5 | WAITING       |
+|  254 | IPC Server handler 13 on 48552                                |        5 | WAITING       |
+|  255 | IPC Server handler 14 on 48552                                |        5 | WAITING       |
+|  256 | IPC Server handler 15 on 48552                                |        5 | WAITING       |
+|  257 | IPC Server handler 16 on 48552                                |        5 | WAITING       |
+|  258 | IPC Server handler 17 on 48552                                |        5 | WAITING       |
+|  259 | IPC Server handler 18 on 48552                                |        5 | WAITING       |
+|  260 | IPC Server handler 19 on 48552                                |        5 | WAITING       |
+|  261 | IPC Server handler 20 on 48552                                |        5 | WAITING       |
+|  262 | IPC Server handler 21 on 48552                                |        5 | WAITING       |
+|  263 | IPC Server handler 22 on 48552                                |        5 | WAITING       |
+|  264 | IPC Server handler 23 on 48552                                |        5 | WAITING       |
+|  265 | IPC Server handler 24 on 48552                                |        5 | WAITING       |
+|  266 | IPC Server handler 25 on 48552                                |        5 | WAITING       |
+|  267 | IPC Server handler 26 on 48552                                |        5 | WAITING       |
+|  268 | IPC Server handler 27 on 48552                                |        5 | WAITING       |
+|  269 | IPC Server handler 28 on 48552                                |        5 | WAITING       |
+|  270 | IPC Server handler 29 on 48552                                |        5 | WAITING       |
+|  271 | PRI IPC Server handler 0 on 48552                             |        5 | WAITING       |
+|  272 | PRI IPC Server handler 1 on 48552                             |        5 | WAITING       |
+|  273 | PRI IPC Server handler 2 on 48552                             |        5 | WAITING       |
+|  274 | PRI IPC Server handler 3 on 48552                             |        5 | WAITING       |
+|  275 | PRI IPC Server handler 4 on 48552                             |        5 | WAITING       |
+|  276 | PRI IPC Server handler 5 on 48552                             |        5 | WAITING       |
+|  277 | PRI IPC Server handler 6 on 48552                             |        5 | WAITING       |
+|  278 | PRI IPC Server handler 7 on 48552                             |        5 | WAITING       |
+|  279 | PRI IPC Server handler 8 on 48552                             |        5 | WAITING       |
+|  280 | PRI IPC Server handler 9 on 48552                             |        5 | WAITING       |
+|  281 | SplitLogWorker-localhost,48552,1347724785581                  |        5 | WAITING       |
+|  283 | LruBlockCache.EvictionThread                                  |        5 | WAITING       |
+|  285 | LRU Statistics #0                                             |        5 | TIMED_WAITING |
+|  288 | ResponseProcessor for block blk_8722297095659285937_1007      |        5 | RUNNABLE      |
+|  289 | IPC Client (47) connection to /127.0.0.1:48552 from an unk... |        5 | TIMED_WAITING |
+|  290 | RS_OPEN_ROOT-localhost,48552,1347724785581-0                  |        5 | WAITING       |
+|  293 | MASTER_OPEN_REGION-localhost:47147-0                          |        5 | WAITING       |
+|  295 | RS_OPEN_META-localhost,48552,1347724785581-0                  |        5 | WAITING       |
+|  297 | MASTER_OPEN_REGION-localhost:47147-1                          |        5 | WAITING       |
+|  298 | localhost:47147-BalancerChore                                 |        5 | TIMED_WAITING |
+|  299 | localhost:47147-CatalogJanitor                                |        5 | TIMED_WAITING |
+|  300 | Thread-202                                                    |        5 | WAITING       |
+|  301 | Timer thread for monitoring                                   |        5 | TIMED_WAITING |
+|  304 | Thread[Thread-204,5,main]                                     |        5 | TIMED_WAITING |
+|  306 | Socket Reader #1 for port 9001                                |        5 | RUNNABLE      |
+|  310 | 8241628@qtp-29595982-0                                        |        5 | TIMED_WAITING |
+|  311 | 30236967@qtp-29595982-1 - Acceptor0 SelectChannelConnector... |        5 | RUNNABLE      |
+|  312 | Timer-4                                                       |        5 | TIMED_WAITING |
+|  315 | pool-33-thread-1                                              |        5 | WAITING       |
+|  316 | Thread-213                                                    |        5 | WAITING       |
+|  321 | jobInitManager                                                |        5 | WAITING       |
+|  322 | expireTrackers                                                |        5 | TIMED_WAITING |
+|  323 | retireJobs                                                    |        5 | TIMED_WAITING |
+|  302 | expireLaunchingTasks                                          |        5 | TIMED_WAITING |
+|  307 | IPC Server Responder                                          |        5 | RUNNABLE      |
+|  305 | IPC Server listener on 9001                                   |        5 | RUNNABLE      |
+|  324 | IPC Server handler 0 on 9001                                  |        5 | WAITING       |
+|  325 | IPC Server handler 1 on 9001                                  |        5 | WAITING       |
+|  326 | IPC Server handler 2 on 9001                                  |        5 | WAITING       |
+|  327 | IPC Server handler 3 on 9001                                  |        5 | WAITING       |
+|  328 | IPC Server handler 4 on 9001                                  |        5 | WAITING       |
+|  329 | IPC Server handler 5 on 9001                                  |        5 | WAITING       |
+|  330 | IPC Server handler 6 on 9001                                  |        5 | WAITING       |
+|  331 | IPC Server handler 7 on 9001                                  |        5 | WAITING       |
+|  332 | IPC Server handler 8 on 9001                                  |        5 | WAITING       |
+|  333 | IPC Server handler 9 on 9001                                  |        5 | WAITING       |
+|  341 | Directory/File cleanup thread                                 |        5 | WAITING       |
+|  351 | Socket Reader #1 for port 49887                               |        5 | RUNNABLE      |
+|  352 | IPC Server Responder                                          |        5 | RUNNABLE      |
+|  350 | IPC Server listener on 49887                                  |        5 | RUNNABLE      |
+|  353 | IPC Server handler 0 on 49887                                 |        5 | WAITING       |
+|  354 | IPC Server handler 1 on 49887                                 |        5 | WAITING       |
+|  355 | IPC Server handler 2 on 49887                                 |        5 | WAITING       |
+|  356 | IPC Server handler 3 on 49887                                 |        5 | WAITING       |
+|  357 | IPC Client (47) connection to localhost/127.0.0.1:9001 fro... |        5 | TIMED_WAITING |
+|  358 | Map-events fetcher for all reduce tasks on tracker_localho... |        5 | WAITING       |
+|  365 | TaskLauncher for MAP tasks                                    |        5 | WAITING       |
+|  366 | TaskLauncher for REDUCE tasks                                 |        5 | WAITING       |
+|  367 | Monitor for Jetty bugs                                        |        5 | TIMED_WAITING |
+|  368 | 2026550@qtp-29109081-0 - Acceptor0 SelectChannelConnector@... |        5 | RUNNABLE      |
+|  369 | Timer-5                                                       |        5 | TIMED_WAITING |
+|  370 | Thread-252                                                    |        5 | TIMED_WAITING |
+|  340 | Thread-230                                                    |        5 | TIMED_WAITING |
+|  339 | Thread-229                                                    |        5 | WAITING       |
+|  334 | taskCleanup                                                   |        5 | WAITING       |
+|  372 | 28311246@qtp-8881919-0                                        |        5 | TIMED_WAITING |
+|  373 | 29896220@qtp-8881919-1 - Acceptor0 SocketConnector@0.0.0.0... |        5 | RUNNABLE      |
+|  374 | Timer-6                                                       |        5 | TIMED_WAITING |
+|  375 | pool-34-thread-1                                              |        5 | WAITING       |
+|  380 | Timer thread for monitoring rowLocker                         |        5 | TIMED_WAITING |
+|  392 | RS_OPEN_REGION-localhost,48552,1347724785581-0                |        5 | WAITING       |
+|  393 | IPC Client (47) connection to localhost/127.0.0.1:8020 fro... |        5 | TIMED_WAITING |
+|  395 | MASTER_OPEN_REGION-localhost:47147-2                          |        5 | WAITING       |
+|  407 | RS_OPEN_REGION-localhost,48552,1347724785581-1                |        5 | WAITING       |
+|  409 | MASTER_OPEN_REGION-localhost:47147-3                          |        5 | WAITING       |
+|  419 | RS_OPEN_REGION-localhost,48552,1347724785581-2                |        5 | WAITING       |
+|  421 | MASTER_OPEN_REGION-localhost:47147-4                          |        5 | WAITING       |
+|  438 | hbase-batch-thread-1                                          |        5 | WAITING       |
+|  459 | Timer thread for monitoring blobIncubator                     |        5 | TIMED_WAITING |
+|  462 | Timer thread for monitoring repository                        |        5 | TIMED_WAITING |
+|  463 | Timer thread for monitoring linkIndex                         |        5 | TIMED_WAITING |
+|  484 | Timer thread for monitoring linkIndexUpdater                  |        5 | TIMED_WAITING |
+|  498 | Timer thread for monitoring rowlog                            |        5 | TIMED_WAITING |
+|  499 | Timer thread for monitoring subscriptionHandler               |        5 | TIMED_WAITING |
+|  523 | Timer thread for monitoring solrClient                        |        5 | TIMED_WAITING |
+|  524 | Timer thread for monitoring indexer                           |        5 | TIMED_WAITING |
+|  528 | Timer thread for monitoring indexUpdater                      |        5 | TIMED_WAITING |
+|  562 | 32922587@qtp-8881919-2                                        |        5 | TIMED_WAITING |
+|  563 | 31165231@qtp-8881919-3                                        |        5 | TIMED_WAITING |
+|  564 | 24454777@qtp-8881919-4                                        |        5 | RUNNABLE      |
+|  565 | 28012832@qtp-8881919-5                                        |        5 | TIMED_WAITING |
+|  574 | 30688854@qtp-8881919-6                                        |        5 | TIMED_WAITING |
+|  576 | 30929885@qtp-8881919-8                                        |        5 | TIMED_WAITING |
+|  577 | 3145316@qtp-8881919-9                                         |        5 | TIMED_WAITING |
+|  580 | 20203690@qtp-8881919-10                                       |        5 | TIMED_WAITING |
+|  585 | 15542660@qtp-8881919-11                                       |        5 | RUNNABLE      |
+|  586 | main-SendThread(localhost:2181)                               |        5 | RUNNABLE      |
+|  587 | main-EventThread                                              |        5 | WAITING       |
+|  588 | TypeManager cache refresher                                   |        5 | TIMED_WAITING |
+|  651 | main-SendThread(localhost:2181)                               |        5 | RUNNABLE      |
+|  652 | main-EventThread                                              |        5 | WAITING       |
+|  654 | pool-80-thread-1                                              |        5 | TIMED_WAITING |
+|  655 | pool-83-thread-1                                              |        5 | TIMED_WAITING |
+|  797 | pool-146-thread-1                                             |        5 | TIMED_WAITING |
+|  798 | pool-148-thread-1                                             |        5 | TIMED_WAITING |
+|  910 | main-SendThread(localhost:2181)                               |        5 | RUNNABLE      |
+|  911 | main-EventThread                                              |        5 | WAITING       |
+|  938 | pool-202-thread-1                                             |        5 | TIMED_WAITING |
+|  939 | pool-204-thread-1                                             |        5 | TIMED_WAITING |
+|  944 | main-SendThread(localhost:2181)                               |        5 | RUNNABLE      |
+|  945 | main-EventThread                                              |        5 | WAITING       |
+|  946 | main-SendThread(localhost:2181)                               |        5 | RUNNABLE      |
+|  947 | main-EventThread                                              |        5 | WAITING       |
+|  948 | main-SendThread(localhost:2181)                               |        5 | RUNNABLE      |
+|  949 | main-EventThread                                              |        5 | WAITING       |
+|  950 | Indexer model refresher                                       |        5 | WAITING       |
+|  951 | RowLogConfigurationManager observers notifier                 |        5 | WAITING       |
+|  952 | LeaderProvisioner for RowLog Processor mq                     |        5 | WAITING       |
+|  954 | pool-54-thread-1                                              |        5 | TIMED_WAITING |
+|  955 | Thread-405                                                    |        5 | WAITING       |
+|  956 | pool-55-thread-1                                              |        5 | TIMED_WAITING |
+|  957 | TypeManager cache refresher                                   |        5 | TIMED_WAITING |
+|  958 | LeaderProvisioner for Blob Incubator Monitor                  |        5 | WAITING       |
+|  959 | Thread-406                                                    |        5 | TIMED_WAITING |
+|  960 | New I/O server boss #34 ([id: 0x00260706, /0:0:0:0:0:0:0:0... |        5 | RUNNABLE      |
+|  961 | LeaderProvisioner for Indexer Master                          |        5 | WAITING       |
+|  962 | IndexerMasterEventWorker                                      |        5 | TIMED_WAITING |
+|  963 | IndexerBatchJobWatcher                                        |        5 | TIMED_WAITING |
+|  964 | IndexerWorkerEventWorker                                      |        5 | WAITING       |
+|  965 | qtp12966016-965 Acceptor0 SocketConnector@0.0.0.0:12060 ST... |        5 | RUNNABLE      |
+|  966 | Thread-408                                                    |        5 | TIMED_WAITING |
+|  967 | main-SendThread(localhost:2181)                               |        5 | RUNNABLE      |
+|  968 | main-EventThread                                              |        5 | WAITING       |
+|  969 | TypeManager cache refresher                                   |        5 | TIMED_WAITING |
+|  970 | New I/O client boss #16                                       |        5 | RUNNABLE      |
+|  972 | New I/O client worker #16-1                                   |        5 | RUNNABLE      |
+|  973 | New I/O server worker #34-1                                   |        5 | RUNNABLE      |
+|  976 | main-SendThread(localhost:2181)                               |        5 | RUNNABLE      |
+|  977 | main-EventThread                                              |        5 | WAITING       |
+|  978 | main-SendThread(localhost:2181)                               |        5 | RUNNABLE      |
+|  979 | main-EventThread                                              |        5 | WAITING       |
+|  980 | New I/O client boss #17                                       |        5 | RUNNABLE      |
+|  982 | New I/O client worker #17-1                                   |        5 | RUNNABLE      |
+|  983 | New I/O server worker #34-2                                   |        5 | RUNNABLE      |
+|  990 | New I/O client boss #19                                       |        5 | RUNNABLE      |
+|  992 | New I/O server worker #34-3                                   |        5 | RUNNABLE      |
+|  993 | New I/O client worker #19-1                                   |        5 | RUNNABLE      |
+|  996 | TypeManager cache refresher-SendThread(localhost:2181)        |        5 | RUNNABLE      |
+|  997 | TypeManager cache refresher-EventThread                       |        5 | WAITING       |
+|  998 | TypeManager cache refresher-SendThread(localhost:2181)        |        5 | RUNNABLE      |
+|  999 | TypeManager cache refresher-EventThread                       |        5 | WAITING       |
+| 1016 | New I/O client boss #20                                       |        5 | RUNNABLE      |
+| 1017 | New I/O server worker #34-4                                   |        5 | RUNNABLE      |
+| 1019 | New I/O client worker #20-1                                   |        5 | RUNNABLE      |
+| 1023 | LeaderProvisioner for RowLog Processor wal                    |        5 | WAITING       |
+| 1024 | pool-59-thread-1                                              |        5 | TIMED_WAITING |
+| 1027 | Thread-409                                                    |        5 | WAITING       |
+|  705 | Async disk worker #0 for volume /tmp/lily-proxy-6d65ebb3-4... |        5 | TIMED_WAITING |
+|  706 | Async disk worker #0 for volume /tmp/lily-proxy-6d65ebb3-4... |        5 | TIMED_WAITING |
+|  101 | org.apache.hadoop.hdfs.server.datanode.DataXceiverServer@b... |        5 | RUNNABLE      |
+|  194 | DataXceiver for client /127.0.0.1:45209 [Waiting for opera... |        5 | RUNNABLE      |
+|  286 | DataXceiver for client /127.0.0.1:45220 [receiving block b... |        5 | RUNNABLE      |
+|  287 | PacketResponder 0 for Block blk_8722297095659285937_1007      |        5 | TIMED_WAITING |
+|  291 | DataXceiver for client /127.0.0.1:45222 [Waiting for opera... |        5 | RUNNABLE      |
+|  932 | DataXceiver for client /127.0.0.1:45357 [Waiting for opera... |        5 | RUNNABLE      |
+|  937 | DataXceiver for client /127.0.0.1:45359 [Waiting for opera... |        5 | RUNNABLE      |
+|  940 | DataXceiver for client /127.0.0.1:45360 [Waiting for opera... |        5 | RUNNABLE      |
+|  550 | rowlog-client-mq-boss-thread-1                                |        5 | TIMED_WAITING |
+|  551 | rowlog-client-mq-worker-thread-1                              |        5 | TIMED_WAITING |
+|  552 | rowlog-client-mq-worker-thread-2                              |        5 | TIMED_WAITING |
+|  553 | rowlog-client-mq-worker-thread-3                              |        5 | TIMED_WAITING |
+|  554 | rowlog-client-mq-worker-thread-4                              |        5 | TIMED_WAITING |
+|  555 | rowlog-client-mq-worker-thread-5                              |        5 | TIMED_WAITING |
+|  567 | rowlog-client-mq-worker-thread-6                              |        5 | TIMED_WAITING |
+|  570 | rowlog-client-mq-worker-thread-7                              |        5 | TIMED_WAITING |
+|  572 | rowlog-client-mq-worker-thread-8                              |        5 | TIMED_WAITING |
+|  573 | rowlog-client-mq-worker-thread-9                              |        5 | TIMED_WAITING |
+|  579 | rowlog-client-mq-worker-thread-10                             |        5 | TIMED_WAITING |
+|  561 | MultiThreadedHttpConnectionManager cleanup                    |        5 | WAITING       |
+|  747 | rowlog-client-mq-boss-thread-1                                |        5 | TIMED_WAITING |
+|  749 | rowlog-client-mq-worker-thread-1                              |        5 | TIMED_WAITING |
+|  752 | rowlog-client-mq-worker-thread-2                              |        5 | TIMED_WAITING |
+|  753 | rowlog-client-mq-worker-thread-3                              |        5 | TIMED_WAITING |
+|  754 | rowlog-client-mq-worker-thread-4                              |        5 | TIMED_WAITING |
+|  756 | rowlog-client-mq-worker-thread-5                              |        5 | TIMED_WAITING |
+|  758 | rowlog-client-mq-worker-thread-6                              |        5 | TIMED_WAITING |
+|  759 | rowlog-client-mq-worker-thread-7                              |        5 | TIMED_WAITING |
+|  762 | rowlog-client-mq-worker-thread-8                              |        5 | TIMED_WAITING |
+|  765 | rowlog-client-mq-worker-thread-9                              |        5 | TIMED_WAITING |
+|  766 | rowlog-client-mq-worker-thread-10                             |        5 | TIMED_WAITING |
+|  889 | rowlog-client-mq-boss-thread-1                                |        5 | TIMED_WAITING |
+|  891 | rowlog-client-mq-worker-thread-1                              |        5 | TIMED_WAITING |
+|  892 | rowlog-client-mq-worker-thread-2                              |        5 | TIMED_WAITING |
+|  894 | rowlog-client-mq-worker-thread-3                              |        5 | TIMED_WAITING |
+|  896 | rowlog-client-mq-worker-thread-4                              |        5 | TIMED_WAITING |
+|  898 | rowlog-client-mq-worker-thread-5                              |        5 | TIMED_WAITING |
+|  900 | rowlog-client-mq-worker-thread-6                              |        5 | TIMED_WAITING |
+|  905 | rowlog-client-mq-worker-thread-7                              |        5 | TIMED_WAITING |
+|  906 | rowlog-client-mq-worker-thread-8                              |        5 | TIMED_WAITING |
+|  907 | rowlog-client-mq-worker-thread-9                              |        5 | TIMED_WAITING |
+|  908 | rowlog-client-mq-worker-thread-10                             |        5 | TIMED_WAITING |
+|  989 | rowlog-scan-thread-1                                          |        5 | WAITING       |
+|  971 | avro-exechandler-thread-1                                     |        5 | WAITING       |
+|  974 | avro-exechandler-thread-2                                     |        5 | WAITING       |
+|  975 | avro-exechandler-thread-3                                     |        5 | WAITING       |
+|  981 | avro-exechandler-thread-4                                     |        5 | WAITING       |
+|  984 | avro-exechandler-thread-5                                     |        5 | WAITING       |
+|  985 | avro-exechandler-thread-6                                     |        5 | WAITING       |
+|  986 | avro-exechandler-thread-7                                     |        5 | WAITING       |
+|  987 | avro-exechandler-thread-8                                     |        5 | WAITING       |
+|  991 | avro-exechandler-thread-9                                     |        5 | WAITING       |
+|  994 | avro-exechandler-thread-10                                    |        5 | WAITING       |
+|  995 | avro-exechandler-thread-11                                    |        5 | WAITING       |
+|  988 | Row log SubscriptionThread for IndexUpdater_dynamicIndex      |        5 | TIMED_WAITING |
+| 1000 | New I/O server boss #35 ([id: 0x002b396a, /127.0.0.1:44984])  |        5 | RUNNABLE      |
+| 1001 | New I/O server boss #36 ([id: 0x001fcabb, /127.0.0.1:33387])  |        5 | RUNNABLE      |
+| 1003 | New I/O server boss #37 ([id: 0x01012fc4, /127.0.0.1:33925])  |        5 | RUNNABLE      |
+| 1006 | New I/O server boss #38 ([id: 0x017dc8f3, /127.0.0.1:36446])  |        5 | RUNNABLE      |
+| 1007 | New I/O server boss #39 ([id: 0x01ef83ae, /127.0.0.1:34508])  |        5 | RUNNABLE      |
+| 1009 | New I/O server boss #40 ([id: 0x0063bae4, /127.0.0.1:51348])  |        5 | RUNNABLE      |
+| 1012 | New I/O server boss #41 ([id: 0x00e51ad4, /127.0.0.1:57322])  |        5 | RUNNABLE      |
+| 1013 | New I/O server boss #42 ([id: 0x013f1131, /127.0.0.1:44218])  |        5 | RUNNABLE      |
+| 1015 | New I/O server boss #43 ([id: 0x00b7ce02, /127.0.0.1:46160])  |        5 | RUNNABLE      |
+| 1020 | New I/O server boss #44 ([id: 0x01a074db, /127.0.0.1:55400])  |        5 | RUNNABLE      |
+| 1002 | Handler: subscription IndexUpdater_dynamicIndex, listener ... |        5 | WAITING       |
+| 1004 | Handler: subscription IndexUpdater_dynamicIndex, listener ... |        5 | WAITING       |
+| 1005 | Handler: subscription IndexUpdater_dynamicIndex, listener ... |        5 | WAITING       |
+| 1008 | Handler: subscription IndexUpdater_dynamicIndex, listener ... |        5 | WAITING       |
+| 1010 | Handler: subscription IndexUpdater_dynamicIndex, listener ... |        5 | WAITING       |
+| 1011 | Handler: subscription IndexUpdater_dynamicIndex, listener ... |        5 | WAITING       |
+| 1014 | Handler: subscription IndexUpdater_dynamicIndex, listener ... |        5 | WAITING       |
+| 1018 | Handler: subscription IndexUpdater_dynamicIndex, listener ... |        5 | WAITING       |
+| 1021 | Handler: subscription IndexUpdater_dynamicIndex, listener ... |        5 | WAITING       |
+| 1022 | Handler: subscription IndexUpdater_dynamicIndex, listener ... |        5 | WAITING       |
+| 1028 | rowlog-scan-thread-1                                          |        5 | WAITING       |
+| 1025 | Row log SubscriptionThread for WAL                            |        5 | TIMED_WAITING |
+| 1026 | Handler: subscription WAL, listener WAL                       |        5 | WAITING       |

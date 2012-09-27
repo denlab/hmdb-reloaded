@@ -29,7 +29,16 @@ public class A {
         }
     }
 
+    public static void sleepMillis(long millis) {
+        try {
+            Thread.sleep(millis);
+        }
+        catch (Exception e) {
+        }
+    }
+
     public static void a(String msg) {
+        sleepMillis(1000);
         System.out.println("        This is A!, msg="+msg);
     }
 }

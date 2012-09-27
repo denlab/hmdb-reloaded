@@ -80,6 +80,8 @@
 
 (def capture (atom (cap/ini)))
 
+(reset! capture (cap/ini))
+
 (def capture-callback
   (proxy [Callback] []
     (before         [t clazz method args     ] (swap! capture cap/bef t clazz method args) )
@@ -132,13 +134,15 @@
   ;; run it
   (Main/main nil)
   ;; display the content of the atom:
-  (pprint @capture)
+  (pprint (z/root @capture))
   ;; display as XML:
   (println (xml/emit (z/root @capture)))
 
   (swankject.SwankjectAspect/start)
 
   (def f (write-xml-to-disk-forever!))
+
+  (ins/inspect-tree (z/root @capture))
 
   ;; write atom to file (fast, ugly (all on one line))
   (x/emit (z/root @capture)
